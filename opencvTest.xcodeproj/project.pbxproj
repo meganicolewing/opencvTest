@@ -13,6 +13,7 @@
 		01A258BB28760444008DC6CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A258B928760444008DC6CD /* Main.storyboard */; };
 		01A258BD28760447008DC6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A258BC28760447008DC6CD /* Assets.xcassets */; };
 		01A258C028760447008DC6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A258BE28760447008DC6CD /* LaunchScreen.storyboard */; };
+		01A258CA2876048B008DC6CD /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A258C92876048B008DC6CD /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		01A258BC28760447008DC6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01A258BF28760447008DC6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01A258C128760447008DC6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01A258C92876048B008DC6CD /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Desktop/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A258CA2876048B008DC6CD /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 				01A258BC28760447008DC6CD /* Assets.xcassets */,
 				01A258BE28760447008DC6CD /* LaunchScreen.storyboard */,
 				01A258C128760447008DC6CD /* Info.plist */,
+				01A258C92876048B008DC6CD /* opencv2.framework */,
 			);
 			path = opencvTest;
 			sourceTree = "<group>";
@@ -288,6 +292,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = STV277F7AL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opencvTest",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = opencvTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,6 +324,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = STV277F7AL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/opencvTest",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = opencvTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
